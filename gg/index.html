@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio / Penguin Photography</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand fw-bold ls-tight" href="#">PENGUIN STUDIO.</a>
+            <div class="ms-auto d-flex align-items-center gap-4">
+                <a href="#about" class="nav-link-minimal">О нас</a>
+                <a href="#gallery" class="nav-link-minimal">Галерея</a>
+                <a href="#booking" class="btn-dark-minimal">Запись</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Тело: Приветствие -->
+        <section id="about" class="hero-section">
+            <div class="container text-center">
+                <h1 class="display-3 fw-light mb-4">Эстетика холода</h1>
+                <p class="text-muted mx-auto" style="max-width: 550px;">
+                    Профессиональная фотосъемка пингвинов. Мы создаем визуальный контент, который подчеркивает индивидуальность каждой птицы.
+                </p>
+            </div>
+        </section>
+
+        <!-- Тело: Галерея (Grid) -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS276fpyK1AruPV7OOD5wxVCdOzcKJzUaEDgw&s" alt="Penguin 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScmyUqLIWlj_KA0x1PCiVRTKFb3v0Z0kGTKA&s" alt="Penguin 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEQoLh1iRBKyxqOyLtJJPbS7MEISsyk-V8w&s" alt="Penguin 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Тело: Форма (Flexbox центрирование) -->
+        <section id="booking" class="booking-section">
+            <div class="container d-flex justify-content-center">
+                <div class="form-container">
+                    <h2 class="h4 mb-4 text-center">Форма заявки</h2>
+                    <form id="bookingForm" class="needs-validation" novalidate>
+                        <input type="text" class="form-input" placeholder="Имя" required>
+                        <input type="email" class="form-input" placeholder="Email" required>
+                        <input type="text" class="form-input" placeholder="Имя котика" required>
+                        <button type="submit" class="btn-submit">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer border-top">
+        <div class="container d-flex justify-content-between align-items-center py-4">
+            <span class="small text-muted text-uppercase ls-wide">© 2024 Studio</span>
+            <span class="small text-muted text-uppercase ls-wide">Antarctica Branch</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
